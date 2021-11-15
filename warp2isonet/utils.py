@@ -1,4 +1,4 @@
-from warp_xml_handling import xml2dict
+from .warp_xml_handling import xml2dict
 from pathlib import Path
 from thefuzz import process, fuzz
 import re

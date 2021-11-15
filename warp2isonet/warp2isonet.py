@@ -4,7 +4,7 @@ import starfile
 import pandas as pd
 from rich.console import Console
 from pathlib import Path
-from utils import get_tomograms, get_zero_degree_xml_files, \
+from .utils import get_tomograms, get_zero_degree_xml_files, \
     defocus_from_xml, match_tomograms_to_xml_files, pixel_size_from_tomogram
 
 cli = typer.Typer()
