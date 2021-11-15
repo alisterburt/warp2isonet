@@ -15,8 +15,8 @@ def warp2isonet(warp_processing_directory: Path = Path()):
     """This line is the docstring of single_command"""
     console = Console(record=True)
     console.log(
-        f'[bold green]preparing files from {warp_processing_directory} for '
-        f'isonet! :rocket:'
+        f'preparing files from {warp_processing_directory} for '
+        f'[bold green]isonet! :rocket:'
     )
     # Get tomograms
     tomograms = get_tomograms(warp_processing_directory)
@@ -41,7 +41,7 @@ def warp2isonet(warp_processing_directory: Path = Path()):
     output_filename = 'isonet_input.star'
     starfile.write(df, output_filename, overwrite=True)
 
-    console.log(f'[blue underline]done!')
+    console.log(f'[bold cyan]done!')
     logfile_name = f'warp2isonet.html'
     console.save_html(logfile_name)
     console.log(f'html output saved in [bold green]{logfile_name}')
